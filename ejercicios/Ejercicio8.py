@@ -4,4 +4,4 @@ def separatexto(texto, separador):
 
 texto = str(input("Introduce el texto a separar"))
 separador = str(input("Introduce un separador del texto"))
-print(separatexto(texto, separador))
+print("El texto separado queda así: " + separatexto(texto, separador))
