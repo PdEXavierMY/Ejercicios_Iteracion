@@ -1,21 +1,19 @@
 from datetime import datetime
-import pygame
-import sys
 
 class Banco():
   def __init__(self):
     self.cuentas = {
-      '9084639567':{
+      '1':{
         'nombre': 'Marcos Martinez',
         'balance': 173735,
         'tipo': 1,
         'movimientos': []
-      },'9103947823':{
+      },'2':{
         'nombre': 'Alejandro Sanchez',
         'balance': 1342,
         'tipo': 0,
         'movimientos': []
-      },'1932098546':{
+      },'3':{
         'nombre': 'Claudia Plaza',
         'balance': 120984,
         'tipo': 1,
@@ -31,13 +29,26 @@ class Banco():
       return print('La cuenta de destino no está registrada.')
     if balance_cuenta < int(cantidad):
       return print('La cantidad introducida es superior a la disponible en la cuenta Nº: ' + str(cuenta) + '.')
-    movimientos_cuenta = self.cuentas[str(cuenta)]['movimientos']
-    movimientos_cuenta.append({
-      'cuenta_origen': str(cuenta),
-      'cantidad': int(cantidad),
+    movimientos_cuenta_origen = self.cuentas[str(cuenta)]['movimientos']
+    movimientos_cuenta_origen.append({
+      'cuenta_destino': str(cuenta_destino),
+      'cantidad': '-' + str(cantidad),
       'hora': str(datetime.now())
     })
-    print(self.cuentas['9084639567']['movimientos'])
+    self.cuentas[str(cuenta)]['balance'] -= int(cantidad)
+    movimientos_cuenta_destino = self.cuentas[str(cuenta_destino)]['movimientos']
+    movimientos_cuenta_destino.append({
+      'cuenta_origen': str(cuenta),
+      'cantidad': '+' + str(cantidad),
+      'hora': str(datetime.now())
+    })
+    self.cuentas[str(cuenta_destino)]['balance'] += int(cantidad)
+    print(self.cuentas[cuenta]['movimientos'])
+    print(self.cuentas[cuenta]['balance'], self.cuentas[cuenta_destino]['balance'])
 
-print('Bienvenido a Bancos Ramirez. ¿Quieres realizar algun operación?(S/N): ')
-decision = input('¿Quieres sefuir haciendo opraciones?(S/N): ')
+start = input('Bienvenido a Bancos Ramirez. ¿Quieres realizar algun operación?(S/N): ')
+if start.lower() == 's':
+  decision = start
+  while decision.lower() == 's':
+    Banco().movimiento()
+    decision = input('¿Quieres seguir haciendo operaciones?(S/N): ')
