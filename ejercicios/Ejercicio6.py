@@ -45,10 +45,10 @@ class Banco():
     self.cuentas[str(cuenta_destino)]['balance'] += int(cantidad)
     print(self.cuentas[cuenta]['movimientos'])
     print(self.cuentas[cuenta]['balance'], self.cuentas[cuenta_destino]['balance'])
-
-start = input('Bienvenido a Bancos Ramirez. ¿Quieres realizar algun operación?(S/N): ')
-if start.lower() == 's':
-  decision = start
-  while decision.lower() == 's':
-    Banco().movimiento()
-    decision = input('¿Quieres seguir haciendo operaciones?(S/N): ')
+  def iniciar(self):
+    start = input('Bienvenido a Bancos Ramirez. ¿Quieres realizar algun operación?(S/N): ')
+    if start.lower() == 's':
+      decision = start
+      while decision.lower() == 's':
+        Banco().movimiento()
+        decision = input('¿Quieres seguir haciendo operaciones?(S/N): ')
