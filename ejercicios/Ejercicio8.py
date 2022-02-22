@@ -2,5 +2,6 @@ def separatexto(texto, separador):
   lista = texto.split(separador)
   return lista
 
-texto = "Hoy comí carne en casa, jugé a la pelota, visité un santuario, me zambullí en la piscina y jugé a los bolos"
-print(separatexto(texto, ","))
+texto = str(input("Introduce el texto a separar"))
+separador = str(input("Introduce un separador del texto"))
+print(separatexto(texto, separador))
