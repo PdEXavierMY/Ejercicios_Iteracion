@@ -4,7 +4,7 @@ from ejercicios import Ejercicio6, Ejercicio12
 
 array_ejercicios = {
   6: 'Ejercicio6.Banco().iniciar()',
-  12: 'Ejercicio12.CuadradosRaices()'
+  12: 'Ejercicio12.CuadradosRaices().iniciar()'
 }
 
 if __name__ == "__main__":
