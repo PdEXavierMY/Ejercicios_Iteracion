@@ -15,7 +15,7 @@ class CuadradosRaices():
         return "Este numero no tiene raíz entera"
       else:
         return CuadradosRaices().raiz(n, o+1)
-    print(CuadradosRaices().raiz(20, 0))
+        
   def iniciar(self):
     start = input('¿Que quieres hacer? Cuadrado perfecto (1), Raiz (2) o Salir (0): ')
     while int(start) == 1 or int(start) == 2:
