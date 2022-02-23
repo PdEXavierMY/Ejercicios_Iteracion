@@ -6,9 +6,6 @@ class Mcd():
       return n
     else:
       return Mcd().mcd(m, n%m)
-  n = int(input("Introducza el primer número del mcd por metodo euclides"))
-  m = int(input("Introducza el segundo número del mcd por metodo euclides"))
-  print("El mcd de " + m + " y " + n + " por euclides es " + str(mcd(n, m)))
   
   def mcdresta(self, n, m): 
       if n < m:
