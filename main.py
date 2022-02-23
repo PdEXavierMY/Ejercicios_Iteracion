@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(1, './ejercicios')
-from ejercicios import Ejercicio6, Ejercicio7, Ejercicio8, Ejercicio9, Ejercicio12, Ejercicio11
+from ejercicios import Ejercicio6, Ejercicio7, Ejercicio8, Ejercicio9, Ejercicio12, Ejercicio11, Ejercicio10
 
 array_ejercicios = {
   6: 'Ejercicio6.Banco().iniciar()',
@@ -8,7 +8,8 @@ array_ejercicios = {
   8: 'Ejercicio8.Separatexto().iniciar()',
   9: 'Ejercicio9.Diccionario().iniciar()',
   12: 'Ejercicio12.CuadradosRaices().iniciar()',
-  11: 'Ejercicio11.Mcd().iniciar()'
+  11: 'Ejercicio11.Mcd().iniciar()',
+  10: 'Ejercicio10.Familias().crearTabla()'
 }
 
 if __name__ == "__main__":
