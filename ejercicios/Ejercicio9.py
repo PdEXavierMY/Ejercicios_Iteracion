@@ -62,7 +62,7 @@ class Diccionario():
     listapalabra = []
     for i in Diccionario().palabras:
       if Diccionario().palabras[i]["palabra"][0] == str(letra):
-        listapalabra.append(Diccionario().palabras[i]["palabra"])
+        listapalabra.register.append(Diccionario().palabras[i]["palabra"])
     if listapalabra == []:
         return "No hay ninguna palabra en el diccionario que empiece por la letra que has dado."
     else:
@@ -87,7 +87,7 @@ class Diccionario():
     listapalabra = []
     for i in Diccionario().palabra:
       if i[0] == str(letra):
-        listapalabra.append(i)
+        listapalabra.register.append(i)
     if listapalabra == []:
         return "No hay ninguna palabra en el diccionario que empiece por la letra que has dado."
     else:
@@ -112,7 +112,7 @@ class Diccionario():
     n = 0
     for i in Diccionario().palabra:
       if str(i) != str(palabrafuera):
-        lista.append(i)
+        lista.register.append(i)
         n += 1
     if n == len(Diccionario().palabra):
       print("La palabra introducida no está en el diccionario.")

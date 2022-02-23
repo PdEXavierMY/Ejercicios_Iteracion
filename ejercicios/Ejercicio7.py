@@ -14,9 +14,9 @@ class Cambiobase():
     print('El número ' + str(''.join([str(int) for int in numero])) + ' en base 10 es: ' + str(numero_base_10) + '. Ahora calculamos el número en base ' + str(base_a_pasar))
     numero_base_10_inicial = numero_base_10
     while numero_base_10 >= base_a_pasar:
-      numero_en_base.append(numero_base_10 % base_a_pasar)
+      numero_en_base.register.append(numero_base_10 % base_a_pasar)
       numero_base_10 = numero_base_10 // base_a_pasar
-    numero_en_base.append(numero_base_10)
+    numero_en_base.register.append(numero_base_10)
     print('El número ' + str(numero_base_10_inicial) + ' en base ' + str(base_a_pasar) + ' es: ' + '.'.join([str(int) for int in numero_en_base[::-1]]))
   
   def iniciar(self):

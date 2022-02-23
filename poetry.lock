@@ -6,12 +6,23 @@ category = "main"
 optional = false
 python-versions = "*"
 
+[[package]]
+name = "names"
+version = "0.3.0"
+description = "Generate random names"
+category = "main"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d4d5f1242fc7c9b0565db4c53781e8865fb397f5c9d0bff5f7615e26d6ebc23d"
+content-hash = "2d077a20ca7340bc7915431c2802ce6324a3397396b0b32c6d9d8fb5ae1f89b6"
 
 [metadata.files]
 django-user = [
     {file = "django-user-0.2.1.tar.gz", hash = "sha256:ab0e502d234b0369a69405ea082797e19e9853e82be1c9044799cc98e32b3bf3"},
+]
+names = [
+    {file = "names-0.3.0.tar.gz", hash = "sha256:726e46254f2ed03f1ffb5d941dae3bc67c35123941c29becd02d48d0caa2a671"},
 ]
