@@ -55,3 +55,16 @@ palabras={
     'anterior': 9
   },
 }
+
+def buscar_diccionario():
+  letra = str(input("Da una letra: ")).lower()
+  listapalabra = []
+  for i in palabras:
+    if palabras[i]["palabra"][0] == str(letra):
+      listapalabra.append(palabras[i]["palabra"])
+  if listapalabra == []:
+      return "No hay ninguna palabra en el diccionario que empiece por la letra que has dado."
+  else:
+    return listapalabra
+
+print("Las palabras del diccionario que empiezan por la letra dada son: " + str(buscar_diccionario()))

@@ -1,4 +1,3 @@
-
 class CuadradosRaices():
   def cuadradoper(self, n, limite, lista):
     numero = n**2

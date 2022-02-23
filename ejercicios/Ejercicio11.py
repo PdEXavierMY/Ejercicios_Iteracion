@@ -7,7 +7,7 @@ def mcd(n, m):
     return mcd(m, n%m)
 n = int(input("Introducza el primer número del mcd por metodo euclides"))
 m = int(input("Introducza el segundo número del mcd por metodo euclides"))
-print(str(mcd(n, m)))
+print("El mcd de " + m + " y " + n + " por euclides es " + str(mcd(n, m)))
 
 def mcdresta(n, m): 
     if n < m:
@@ -21,4 +21,4 @@ def mcdresta(n, m):
     return mcdresta(n, m-n)
 nr = int(input("Introducza el primer número del mcd por metodo sumas y restas"))
 mr = int(input("Introducza el segundo número del mcd por metodo sumas y restas"))
-print(str(mcdresta(nr, mr)))
+print("El mcd de " + mr + " y " + nr + " por sumas y restas es " + str(mcdresta(nr, mr)))
